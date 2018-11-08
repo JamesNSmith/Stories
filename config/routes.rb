@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   
   get '/' => 'pages#home'
   get '/about' => 'about#index'
-  get '/signup' => 'signups#new'
+  get '/signups/new' => 'signups#new'
+  #post 'signups' => 'pages#home'
+  post 'signups/new' => 'pages#thanks'
+  get '/thanks' => 'pages#thanks'
   #post		=>
   
   # The priority is based upon order of creation: first created -> highest priority.

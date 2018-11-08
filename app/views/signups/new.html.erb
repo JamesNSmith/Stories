@@ -1,0 +1,11 @@
+<%= form_for :signup do |f|%>
+	<div class="field">
+    <%=f.label :signups%>
+    <%=f.text_area :firstname %>
+    <%=f.text_area :email %>
+  </div>
+	<div class="actions">
+    <%=f.submit "Signup"%>
+	</div>
+<%end%>
+    
